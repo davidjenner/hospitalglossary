@@ -432,6 +432,83 @@ $technical = @{
     }
 }
 
+# Business Acronyms
+$business = @{
+    "ROI" = @{
+        Full = "Return on Investment"
+        Description = "A measure used to evaluate the efficiency or profitability of an investment, calculated as the ratio of net profit to the cost of the investment."
+    }
+    "KPI" = @{
+        Full = "Key Performance Indicator"
+        Description = "A measurable value that demonstrates how effectively a company is achieving key business objectives."
+    }
+    "B2B" = @{
+        Full = "Business to Business"
+        Description = "A type of transaction between businesses, such as one involving a manufacturer and wholesaler, or a wholesaler and a retailer."
+    }
+    "B2C" = @{
+        Full = "Business to Consumer"
+        Description = "A type of transaction where businesses sell products or services directly to consumers."
+    }
+    "CRM" = @{
+        Full = "Customer Relationship Management"
+        Description = "A technology for managing all your company's relationships and interactions with customers and potential customers."
+    }
+    "HR" = @{
+        Full = "Human Resources"
+        Description = "The department of a business or organization that deals with the hiring, administration, and training of staff."
+    }
+    "P&L" = @{
+        Full = "Profit and Loss"
+        Description = "A financial statement that summarizes the revenues, costs, and expenses incurred during a specific period of time."
+    }
+    "SEO" = @{
+        Full = "Search Engine Optimization"
+        Description = "The process of improving the quality and quantity of website traffic to a website or a web page from search engines."
+    }
+    "SWOT" = @{
+        Full = "Strengths, Weaknesses, Opportunities, Threats"
+        Description = "A framework used to evaluate a company's competitive position and to develop strategic planning."
+    }
+    "USP" = @{
+        Full = "Unique Selling Proposition"
+        Description = "A factor that differentiates a product from its competitors, such as the lowest cost, the highest quality, or the first-ever product of its kind."
+    }
+    "FYI" = @{
+        Full = "For Your Information"
+        Description = "A common business term used to share information that may be useful or interesting to the recipient."
+    }
+    "ASAP" = @{
+        Full = "As Soon As Possible"
+        Description = "A term used to convey urgency and the need for immediate action or response."
+    }
+    "RFP" = @{
+        Full = "Request for Proposal"
+        Description = "A document that solicits proposals, often made through a bidding process, by an agency or company interested in procurement of a commodity, service, or valuable asset."
+    }
+    "SLA" = @{
+        Full = "Service Level Agreement"
+        Description = "A commitment between a service provider and a client that defines the level of service expected from the service provider."
+    }
+    "NDA" = @{
+        Full = "Non-Disclosure Agreement"
+        Description = "A legally binding contract that establishes a confidential relationship between two parties."
+    }
+    "IPO" = @{
+        Full = "Initial Public Offering"
+        Description = "The process by which a private company can go public by sale of its stocks to general public."
+    }
+    "MVP" = @{
+        Full = "Minimum Viable Product"
+        Description = "A product with just enough features to be usable by early customers who can then provide feedback for future product development."
+    }
+    "OKR" = @{
+        Full = "Objectives and Key Results"
+        Description = "A goal-setting framework used by individuals, teams, and organizations to define measurable goals and track their outcomes."
+    }
+}
+
+
 
 $medical = @{
     "APTT" = @{
@@ -1116,6 +1193,7 @@ function Get-GlossaryTerm {
     $found = $false
     $categories = @{
         "Technical" = $technical
+        "Business" = $business
         "Medical" = $medical
         "Hospital" = $hospital
         "UHD" = $UHD
