@@ -432,6 +432,775 @@ $technical = @{
     }
 }
 
+# Microsoft Azure, Active Directory, and Intune Acronyms
+$azure = @{
+    "AAD" = @{
+        Full = "Azure Active Directory"
+        Description = "A cloud-based identity and access management service."
+    }
+    "AADDS" = @{
+        Full = "Azure Active Directory Domain Services"
+        Description = "Provides managed domain services such as domain join, group policy, and LDAP."
+    }
+    "AADIP" = @{
+        Full = "Azure Active Directory Identity Protection"
+        Description = "A tool that helps organizations protect their users' identities."
+    }
+    "AADP" = @{
+        Full = "Azure Active Directory Premium"
+        Description = "A premium version of Azure AD with additional features."
+    }
+    "AD" = @{
+        Full = "Active Directory"
+        Description = "A directory service developed by Microsoft for Windows domain networks."
+    }
+    "AD DS" = @{
+        Full = "Active Directory Domain Services"
+        Description = "A server role in Active Directory that allows admins to manage and store information about resources."
+    }
+    "AD FS" = @{
+        Full = "Active Directory Federation Services"
+        Description = "A single sign-on service that allows users to authenticate across multiple web applications."
+    }
+    "AD RMS" = @{
+        Full = "Active Directory Rights Management Services"
+        Description = "A server software for information rights management."
+    }
+    "ADAL" = @{
+        Full = "Active Directory Authentication Library"
+        Description = "A library that enables developers to authenticate users to cloud or on-premises Active Directory."
+    }
+    "ARM" = @{
+        Full = "Azure Resource Manager"
+        Description = "The deployment and management service for Azure."
+    }
+    "ASR" = @{
+        Full = "Azure Site Recovery"
+        Description = "A service that contributes to your business continuity and disaster recovery strategy."
+    }
+    "ATP" = @{
+        Full = "Advanced Threat Protection"
+        Description = "A cloud-based email filtering service that helps protect your organization against sophisticated threats."
+    }
+    "AVD" = @{
+        Full = "Azure Virtual Desktop"
+        Description = "A desktop and app virtualization service that runs on the cloud."
+    }
+    "B2B" = @{
+        Full = "Business to Business"
+        Description = "A model where businesses provide products or services to other businesses."
+    }
+    "B2C" = @{
+        Full = "Business to Consumer"
+        Description = "A model where businesses provide products or services directly to consumers."
+    }
+    "BYOD" = @{
+        Full = "Bring Your Own Device"
+        Description = "A policy that allows employees to use their personal devices for work purposes."
+    }
+    "CA" = @{
+        Full = "Conditional Access"
+        Description = "A tool used by Azure AD to bring signals together, to make decisions, and enforce organizational policies."
+    }
+    "CSP" = @{
+        Full = "Cloud Solution Provider"
+        Description = "A Microsoft partner program that allows partners to sell Microsoft cloud services."
+    }
+    "DDoS" = @{
+        Full = "Distributed Denial of Service"
+        Description = "A type of cyber attack where multiple systems overwhelm the target with a flood of internet traffic."
+    }
+    "DNS" = @{
+        Full = "Domain Name System"
+        Description = "A hierarchical and decentralized naming system for computers, services, or other resources connected to the Internet."
+    }
+    "EMS" = @{
+        Full = "Enterprise Mobility + Security"
+        Description = "A suite of tools that helps protect and secure your organization."
+    }
+    "FIM" = @{
+        Full = "Forefront Identity Manager"
+        Description = "A state-based identity management software product."
+    }
+    "IAM" = @{
+        Full = "Identity and Access Management"
+        Description = "A framework of policies and technologies for ensuring that the right individuals access the right resources."
+    }
+    "IaaS" = @{
+        Full = "Infrastructure as a Service"
+        Description = "A form of cloud computing that provides virtualized computing resources over the internet."
+    }
+    "IDP" = @{
+        Full = "Identity Provider"
+        Description = "A system entity that creates, maintains, and manages identity information."
+    }
+    "Intune" = @{
+        Full = "Microsoft Intune"
+        Description = "A cloud-based service that focuses on mobile device management (MDM) and mobile application management (MAM)."
+    }
+    "IP" = @{
+        Full = "Internet Protocol"
+        Description = "A set of rules governing the format of data sent over the Internet or other network."
+    }
+    "ITSM" = @{
+        Full = "IT Service Management"
+        Description = "A set of policies and processes for managing IT services."
+    }
+    "JIT" = @{
+        Full = "Just-In-Time"
+        Description = "A method to improve efficiency by receiving goods only as they are needed."
+    }
+    "JSON" = @{
+        Full = "JavaScript Object Notation"
+        Description = "A lightweight data-interchange format."
+    }
+    "LDAP" = @{
+        Full = "Lightweight Directory Access Protocol"
+        Description = "An open, vendor-neutral, industry standard application protocol for accessing and maintaining distributed directory information services."
+    }
+    "MAM" = @{
+        Full = "Mobile Application Management"
+        Description = "Software and services that provide and control access to internally developed and commercially available mobile apps."
+    }
+    "MFA" = @{
+        Full = "Multi-Factor Authentication"
+        Description = "A security system that requires more than one method of authentication from independent categories of credentials."
+    }
+    "MIM" = @{
+        Full = "Microsoft Identity Manager"
+        Description = "A tool that helps manage the users, credentials, policies, and access within your organization."
+    }
+    "MMS" = @{
+        Full = "Microsoft Management Summit"
+        Description = "An annual event for IT professionals to learn about Microsoft's management technologies."
+    }
+    "NPS" = @{
+        Full = "Network Policy Server"
+        Description = "A networking component that allows you to create and enforce network access policies for client health, connection request authentication, and connection request authorization."
+    }
+    "NSG" = @{
+        Full = "Network Security Group"
+        Description = "A set of security rules that control the inbound and outbound traffic to network interfaces, VMs, and subnets."
+    }
+    "O365" = @{
+        Full = "Office 365"
+        Description = "A line of subscription services offered by Microsoft as part of the Microsoft Office product line."
+    }
+    "OAuth" = @{
+        Full = "Open Authorization"
+        Description = "An open standard for access delegation, commonly used as a way to grant websites or applications limited access to user information without exposing passwords."
+    }
+    "PaaS" = @{
+        Full = "Platform as a Service"
+        Description = "A category of cloud computing services that provides a platform allowing customers to develop, run, and manage applications."
+    }
+    "PIM" = @{
+        Full = "Privileged Identity Management"
+        Description = "A service that enables you to manage, control, and monitor access to important resources in your organization."
+    }
+    "RBAC" = @{
+        Full = "Role-Based Access Control"
+        Description = "A method of regulating access to computer or network resources based on the roles of individual users within an enterprise."
+    }
+    "RDP" = @{
+        Full = "Remote Desktop Protocol"
+        Description = "A proprietary protocol developed by Microsoft, which provides a user with a graphical interface to connect to another computer over a network connection."
+    }
+    "SaaS" = @{
+        Full = "Software as a Service"
+        Description = "A software distribution model in which applications are hosted by a service provider and made available to customers over the internet."
+    }
+    "SCOM" = @{
+        Full = "System Center Operations Manager"
+        Description = "A cross-platform data center management system for operating systems and hypervisors."
+    }
+    "SCP" = @{
+        Full = "Service Connection Point"
+        Description = "An object in Active Directory that provides information about a service."
+    }
+    "SLA" = @{
+        Full = "Service Level Agreement"
+        Description = "A commitment between a service provider and a client that defines the level of service expected from the service provider."
+    }
+    "SMB" = @{
+        Full = "Server Message Block"
+        Description = "A network file sharing protocol that allows applications to read and write to files and request services from server programs in a computer network."
+    }
+    "SMTP" = @{
+        Full = "Simple Mail Transfer Protocol"
+        Description = "An Internet standard for electronic mail transmission."
+    }
+    "SPN" = @{
+        Full = "Service Principal Name"
+        Description = "A unique identifier of a service instance."
+    }
+    "SQL" = @{
+        Full = "Structured Query Language"
+        Description = "A domain-specific language used in programming and designed for managing data held in a relational database management system."
+    }
+    "SSO" = @{
+        Full = "Single Sign-On"
+        Description = "A session and user authentication service that permits a user to use one."
+        }
+}
+
+$Apple = @{
+    "APN" = @{
+        Full = "Access Point Name"
+        Description = "The name of a gateway between a mobile network and another computer network, often the public Internet."
+    }
+    "AR" = @{
+        Full = "Augmented Reality"
+        Description = "An interactive experience where real-world environments are enhanced by computer-generated perceptual information."
+    }
+    "BLE" = @{
+        Full = "Bluetooth Low Energy"
+        Description = "A wireless personal area network technology designed for novel applications in the healthcare, fitness, beacons, security, and home entertainment industries."
+    }
+    "CPU" = @{
+        Full = "Central Processing Unit"
+        Description = "The primary component of a computer that performs most of the processing inside a computer."
+    }
+    "Face ID" = @{
+        Full = "Facial Recognition ID"
+        Description = "A facial recognition system designed and developed by Apple for secure authentication."
+    }
+    "GPS" = @{
+        Full = "Global Positioning System"
+        Description = "A satellite-based navigation system that allows a GPS receiver to determine its location, speed, and direction."
+    }
+    "HDR" = @{
+        Full = "High Dynamic Range"
+        Description = "A technique used in imaging and photography to reproduce a greater dynamic range of luminosity than is possible with standard digital imaging or photographic techniques."
+    }
+    "iCloud" = @{
+        Full = "iCloud"
+        Description = "A cloud storage and cloud computing service from Apple Inc. launched on October 12, 2011."
+    }
+    "iOS" = @{
+        Full = "iPhone Operating System"
+        Description = "The operating system created and developed by Apple Inc. exclusively for its hardware."
+    }
+    "IP" = @{
+        Full = "Ingress Protection"
+        Description = "A rating system that classifies and rates the degree of protection provided against intrusion, dust, accidental contact, and water."
+    }
+    "LTE" = @{
+        Full = "Long-Term Evolution"
+        Description = "A standard for wireless broadband communication for mobile devices and data terminals."
+    }
+    "MAC" = @{
+        Full = "Media Access Control"
+        Description = "A unique identifier assigned to network interfaces for communications on the physical network segment."
+    }
+    "NFC" = @{
+        Full = "Near Field Communication"
+        Description = "A set of communication protocols that enable two electronic devices to communicate within a 4 cm range."
+    }
+    "OLED" = @{
+        Full = "Organic Light Emitting Diode"
+        Description = "A type of display technology that uses organic compounds to emit light when an electric current is applied."
+    }
+    "RAM" = @{
+        Full = "Random Access Memory"
+        Description = "A type of computer memory that can be accessed randomly; any byte of memory can be accessed without touching the preceding bytes."
+    }
+    "Siri" = @{
+        Full = "Speech Interpretation and Recognition Interface"
+        Description = "An intelligent personal assistant and knowledge navigator that is part of Apple's iOS, iPadOS, watchOS, macOS, and tvOS operating systems."
+    }
+    "Touch ID" = @{
+        Full = "Touch Identification"
+        Description = "A fingerprint recognition feature, designed and released by Apple Inc., that allows users to unlock their devices, make purchases in the various Apple digital media stores, and authenticate Apple Pay online or in apps."
+    }
+    "USB" = @{
+        Full = "Universal Serial Bus"
+        Description = "An industry standard that establishes specifications for cables, connectors, and protocols for connection, communication, and power supply between computers, peripherals, and other computers."
+    }
+    "VPN" = @{
+        Full = "Virtual Private Network"
+        Description = "A service that allows you to connect to the internet via a server run by a VPN provider."
+    }
+    "Wi-Fi" = @{
+        Full = "Wireless Fidelity"
+        Description = "A family of wireless network protocols, based on the IEEE 802.11 family of standards, commonly used for local area networking of devices and Internet access."
+    }
+
+}
+
+
+# UK Acronyms
+$uk = @{
+    "A&E" = @{
+        Full = "Accident and Emergency"
+        Description = "A hospital department that provides emergency treatment to patients with acute illnesses or injuries."
+    }
+    "AA" = @{
+        Full = "Automobile Association"
+        Description = "An organization that provides roadside assistance and other services to motorists."
+    }
+    "ABTA" = @{
+        Full = "Association of British Travel Agents"
+        Description = "A trade association for travel agents and tour operators in the UK."
+    }
+    "ACAS" = @{
+        Full = "Advisory, Conciliation and Arbitration Service"
+        Description = "An organization that helps settle workplace disputes."
+    }
+    "AGM" = @{
+        Full = "Annual General Meeting"
+        Description = "A yearly meeting of shareholders or members of an organization to discuss important matters."
+    }
+    "APR" = @{
+        Full = "Annual Percentage Rate"
+        Description = "A measure of the cost of credit, expressed as a yearly interest rate."
+    }
+    "ASA" = @{
+        Full = "Advertising Standards Authority"
+        Description = "An organization that regulates advertising in the UK."
+    }
+    "ASBO" = @{
+        Full = "Anti-Social Behaviour Order"
+        Description = "A legal order used to restrict the behavior of individuals who engage in anti-social activities."
+    }
+    "BA" = @{
+        Full = "British Airways"
+        Description = "The flag carrier airline of the United Kingdom."
+    }
+    "BBC" = @{
+        Full = "British Broadcasting Corporation"
+        Description = "The national broadcaster of the United Kingdom."
+    }
+    "BMA" = @{
+        Full = "British Medical Association"
+        Description = "A professional association and trade union for doctors in the UK."
+    }
+    "BME" = @{
+        Full = "Black and Minority Ethnic"
+        Description = "A term used to describe people of non-white descent in the UK."
+    }
+    "BT" = @{
+        Full = "British Telecom"
+        Description = "A multinational telecommunications company headquartered in London."
+    }
+    "CAB" = @{
+        Full = "Citizens Advice Bureau"
+        Description = "An organization that provides free advice on legal, financial, and other issues."
+    }
+    "CCTV" = @{
+        Full = "Closed Circuit Television"
+        Description = "A system of video cameras used for surveillance and security."
+    }
+    "CID" = @{
+        Full = "Criminal Investigation Department"
+        Description = "A division of the police force that investigates serious crimes."
+    }
+    "CND" = @{
+        Full = "Campaign for Nuclear Disarmament"
+        Description = "An organization that advocates for the abolition of nuclear weapons."
+    }
+    "DfT" = @{
+        Full = "Department for Transport"
+        Description = "A government department responsible for the English transport network."
+    }
+    "EC" = @{
+        Full = "European Commission"
+        Description = "The executive branch of the European Union."
+    }
+    "EU" = @{
+        Full = "European Union"
+        Description = "A political and economic union of 27 European countries."
+    }
+    "FCA" = @{
+        Full = "Financial Conduct Authority"
+        Description = "A regulatory body for financial services in the UK."
+    }
+    "FSA" = @{
+        Full = "Financial Services Authority"
+        Description = "A former regulatory body for financial services in the UK, replaced by the FCA."
+    }
+    "GP" = @{
+        Full = "General Practitioner"
+        Description = "A medical doctor who treats acute and chronic illnesses and provides preventive care and health education."
+    }
+    "HSE" = @{
+        Full = "Health and Safety Executive"
+        Description = "A government agency responsible for the regulation and enforcement of workplace health, safety, and welfare."
+    }
+    "ID" = @{
+        Full = "Identification"
+        Description = "Documents or cards used to verify a person's identity."
+    }
+    "IT" = @{
+        Full = "Information Technology"
+        Description = "The use of computers and telecommunications equipment to store, retrieve, transmit, and manipulate data."
+    }
+    "LAS" = @{
+        Full = "London Ambulance Service"
+        Description = "The NHS ambulance services trust that serves Greater London."
+    }
+    "LP" = @{
+        Full = "Labour Party"
+        Description = "A political party in the United Kingdom."
+    }
+    "MOD" = @{
+        Full = "Ministry of Defence"
+        Description = "A government department responsible for implementing the defense policy of the United Kingdom."
+    }
+    "NHS" = @{
+        Full = "National Health Service"
+        Description = "The publicly funded healthcare system of the United Kingdom."
+    }
+    "NI" = @{
+        Full = "Northern Ireland"
+        Description = "A part of the United Kingdom located on the island of Ireland."
+    }
+    "NICE" = @{
+        Full = "National Institute for Health and Care Excellence"
+        Description = "An executive non-departmental public body of the Department of Health in the UK."
+    }
+    "RAF" = @{
+        Full = "Royal Air Force"
+        Description = "The aerial warfare service branch of the British Armed Forces."
+    }
+    "R&D" = @{
+        Full = "Research and Development"
+        Description = "Activities in connection with corporate or governmental innovation."
+    }
+    "SLA" = @{
+        Full = "Service Level Agreement"
+        Description = "A commitment between a service provider and a client that defines the level of service expected from the service provider."
+    }
+    "UK" = @{
+        Full = "United Kingdom"
+        Description = "A country located off the northwestern coast of mainland Europe."
+    }
+    "VAT" = @{
+        Full = "Value Added Tax"
+        Description = "A type of tax that is assessed incrementally, based on the increase in value of a product or service at each stage of production or distribution."
+    }
+    "WHO" = @{
+        Full = "World Health Organization"
+        Description = "A specialized agency of the United Nations responsible for international public health."
+    }
+    # Add more UK acronyms as needed
+}
+
+
+# UK Acronyms
+$UK = @{
+    "A&E" = @{
+        Full = "Accident and Emergency"
+        Description = "A hospital department that provides emergency treatment to patients with acute illnesses or injuries."
+    }
+    "AA" = @{
+        Full = "Automobile Association"
+        Description = "An organization that provides roadside assistance and other services to motorists."
+    }
+    "ABTA" = @{
+        Full = "Association of British Travel Agents"
+        Description = "A trade association for travel agents and tour operators in the UK."
+    }
+    "ACAS" = @{
+        Full = "Advisory, Conciliation and Arbitration Service"
+        Description = "An organization that helps settle workplace disputes."
+    }
+    "AGM" = @{
+        Full = "Annual General Meeting"
+        Description = "A yearly meeting of shareholders or members of an organization to discuss important matters."
+    }
+    "APR" = @{
+        Full = "Annual Percentage Rate"
+        Description = "A measure of the cost of credit, expressed as a yearly interest rate."
+    }
+    "ASA" = @{
+        Full = "Advertising Standards Authority"
+        Description = "An organization that regulates advertising in the UK."
+    }
+    "ASBO" = @{
+        Full = "Anti-Social Behaviour Order"
+        Description = "A legal order used to restrict the behavior of individuals who engage in anti-social activities."
+    }
+    "BA" = @{
+        Full = "British Airways"
+        Description = "The flag carrier airline of the United Kingdom."
+    }
+    "BBC" = @{
+        Full = "British Broadcasting Corporation"
+        Description = "The national broadcaster of the United Kingdom."
+    }
+    "BMA" = @{
+        Full = "British Medical Association"
+        Description = "A professional association and trade union for doctors in the UK."
+    }
+    "BME" = @{
+        Full = "Black and Minority Ethnic"
+        Description = "A term used to describe people of non-white descent in the UK."
+    }
+    "BT" = @{
+        Full = "British Telecom"
+        Description = "A multinational telecommunications company headquartered in London."
+    }
+    "CAB" = @{
+        Full = "Citizens Advice Bureau"
+        Description = "An organization that provides free advice on legal, financial, and other issues."
+    }
+    "CCTV" = @{
+        Full = "Closed Circuit Television"
+        Description = "A system of video cameras used for surveillance and security."
+    }
+    "CID" = @{
+        Full = "Criminal Investigation Department"
+        Description = "A division of the police force that investigates serious crimes."
+    }
+    "CND" = @{
+        Full = "Campaign for Nuclear Disarmament"
+        Description = "An organization that advocates for the abolition of nuclear weapons."
+    }
+    "DfT" = @{
+        Full = "Department for Transport"
+        Description = "A government department responsible for the English transport network."
+    }
+    "EC" = @{
+        Full = "European Commission"
+        Description = "The executive branch of the European Union."
+    }
+    "EU" = @{
+        Full = "European Union"
+        Description = "A political and economic union of 27 European countries."
+    }
+    "FCA" = @{
+        Full = "Financial Conduct Authority"
+        Description = "A regulatory body for financial services in the UK."
+    }
+    "FSA" = @{
+        Full = "Financial Services Authority"
+        Description = "A former regulatory body for financial services in the UK, replaced by the FCA."
+    }
+    "GP" = @{
+        Full = "General Practitioner"
+        Description = "A medical doctor who treats acute and chronic illnesses and provides preventive care and health education."
+    }
+    "HSE" = @{
+        Full = "Health and Safety Executive"
+        Description = "A government agency responsible for the regulation and enforcement of workplace health, safety, and welfare."
+    }
+    "ID" = @{
+        Full = "Identification"
+        Description = "Documents or cards used to verify a person's identity."
+    }
+    "IT" = @{
+        Full = "Information Technology"
+        Description = "The use of computers and telecommunications equipment to store, retrieve, transmit, and manipulate data."
+    }
+    "LAS" = @{
+        Full = "London Ambulance Service"
+        Description = "The NHS ambulance services trust that serves Greater London."
+    }
+    "LP" = @{
+        Full = "Labour Party"
+        Description = "A political party in the United Kingdom."
+    }
+    "MOD" = @{
+        Full = "Ministry of Defence"
+        Description = "A government department responsible for implementing the defense policy of the United Kingdom."
+    }
+    "NHS" = @{
+        Full = "National Health Service"
+        Description = "The publicly funded healthcare system of the United Kingdom."
+    }
+    "NI" = @{
+        Full = "Northern Ireland"
+        Description = "A part of the United Kingdom located on the island of Ireland."
+    }
+    "NICE" = @{
+        Full = "National Institute for Health and Care Excellence"
+        Description = "An executive non-departmental public body of the Department of Health in the UK."
+    }
+    "RAF" = @{
+        Full = "Royal Air Force"
+        Description = "The aerial warfare service branch of the British Armed Forces."
+    }
+    "R&D" = @{
+        Full = "Research and Development"
+        Description = "Activities in connection with corporate or governmental innovation."
+    }
+    "SLA" = @{
+        Full = "Service Level Agreement"
+        Description = "A commitment between a service provider and a client that defines the level of service expected from the service provider."
+    }
+    "UK" = @{
+        Full = "United Kingdom"
+        Description = "A country located off the northwestern coast of mainland Europe."
+    }
+    "VAT" = @{
+        Full = "Value Added Tax"
+        Description = "A type of tax that is assessed incrementally, based on the increase in value of a product or service at each stage of production or distribution."
+    }
+    "WHO" = @{
+        Full = "World Health Organization"
+        Description = "A specialized agency of the United Nations responsible for international public health."
+    }
+    # Add more UK acronyms as needed
+}
+
+# Office Environment Acronyms
+$office = @{
+    "BID" = @{
+        Full = "Break It Down"
+        Description = "A request to simplify or explain something in more detail."
+    }
+    "COB" = @{
+        Full = "Close of Business"
+        Description = "The end of the business day, typically 5 PM."
+    }
+    "EOD" = @{
+        Full = "End of Day"
+        Description = "The end of the working day."
+    }
+    "EOM" = @{
+        Full = "End of Message"
+        Description = "Indicates the end of an email message."
+    }
+    "EOW" = @{
+        Full = "End of Week"
+        Description = "The end of the working week, typically Friday."
+    }
+    "ETA" = @{
+        Full = "Estimated Time of Arrival"
+        Description = "The expected time when someone or something will arrive."
+    }
+    "FTE" = @{
+        Full = "Full-Time Employee"
+        Description = "An employee who works full-time hours."
+    }
+    "FWIW" = @{
+        Full = "For What It's Worth"
+        Description = "Used to offer a suggestion or opinion."
+    }
+    "IAM" = @{
+        Full = "In A Meeting"
+        Description = "Indicates that someone is currently in a meeting."
+    }
+    "IMO" = @{
+        Full = "In My Opinion"
+        Description = "Used to express a personal opinion."
+    }
+    "KISS" = @{
+        Full = "Keep It Simple, Stupid"
+        Description = "A reminder to keep things simple and straightforward."
+    }
+    "LET" = @{
+        Full = "Leaving Early Today"
+        Description = "Indicates that someone is leaving work earlier than usual."
+    }
+    "LMK" = @{
+        Full = "Let Me Know"
+        Description = "A request for someone to inform you about something."
+    }
+    "MoM" = @{
+        Full = "Month Over Month"
+        Description = "A comparison of a metric from one month to the next."
+    }
+    "MTD" = @{
+        Full = "Month To Date"
+        Description = "A measure of performance from the beginning of the month to the current date."
+    }
+    "NIM" = @{
+        Full = "No Internal Message"
+        Description = "Indicates that a message is not for internal communication."
+    }
+    "OOO" = @{
+        Full = "Out Of Office"
+        Description = "Indicates that someone is not at work."
+    }
+    "OT" = @{
+        Full = "Off Topic"
+        Description = "Indicates that a discussion has strayed from the main topic."
+    }
+    "OTP" = @{
+        Full = "On The Phone"
+        Description = "Indicates that someone is currently on a phone call."
+    }
+    "PA" = @{
+        Full = "Performance Appraisal"
+        Description = "A review of an employee's performance."
+    }
+    "POC" = @{
+        Full = "Point Of Contact"
+        Description = "The person to contact for information or assistance."
+    }
+    "PTE" = @{
+        Full = "Part-Time Employee"
+        Description = "An employee who works part-time hours."
+    }
+    "PTO" = @{
+        Full = "Paid Time Off"
+        Description = "Leave that an employee is paid for, such as vacation or sick leave."
+    }
+    "NRN" = @{
+        Full = "No Reply Necessary"
+        Description = "Indicates that a response is not required."
+    }
+    "NSFW" = @{
+        Full = "Not Safe For Work"
+        Description = "Content that is inappropriate for the workplace."
+    }
+    "NWR" = @{
+        Full = "Not Work Related"
+        Description = "Indicates that a message is not related to work."
+    }
+    "Re" = @{
+        Full = "Regarding"
+        Description = "Used to refer to the subject of a previous message."
+    }
+    "RFD" = @{
+        Full = "Request For Discussion"
+        Description = "A request to discuss a particular topic."
+    }
+    "SMART" = @{
+        Full = "Specific, Measurable, Achievable, Relevant, Time-bound"
+        Description = "A framework for setting clear and achievable goals."
+    }
+    "SME" = @{
+        Full = "Subject Matter Expert"
+        Description = "An expert in a particular area or topic."
+    }
+    "TED" = @{
+        Full = "Tell Me, Explain To Me, Describe To Me"
+        Description = "A request for more information or clarification."
+    }
+    "TL;DR" = @{
+        Full = "Too Long; Didn't Read"
+        Description = "Indicates that a message is too long to read in full."
+    }
+    "TOS" = @{
+        Full = "Terms Of Service"
+        Description = "The rules and regulations that users must agree to in order to use a service."
+    }
+    "TYT" = @{
+        Full = "Take Your Time"
+        Description = "A reminder to not rush and take the necessary time."
+    }
+    "WFH" = @{
+        Full = "Work From Home"
+        Description = "Indicates that someone is working remotely from home."
+    }
+    "WIIFM" = @{
+        Full = "What's In It For Me"
+        Description = "A question to understand the personal benefits of a situation."
+    }
+    "WOM" = @{
+        Full = "Word Of Mouth"
+        Description = "Information spread by people talking to each other."
+    }
+    "YTD" = @{
+        Full = "Year To Date"
+        Description = "A measure of performance from the beginning of the year to the current date."
+    }
+}
+
+
 # Business Acronyms
 $business = @{
     "ROI" = @{
@@ -508,6 +1277,220 @@ $business = @{
     }
 }
 
+
+$Cybersecurity = @{
+    "APT" = @{
+        Full = "Advanced Persistent Threat"
+        Description = "A prolonged and targeted cyberattack in which an intruder gains access to a network and remains undetected for an extended period."
+    }
+    "SIEM" = @{
+        Full = "Security Information and Event Management"
+        Description = "A system that collects and analyzes log data from various sources to detect and respond to security threats in real-time."
+    }
+    "IDS" = @{
+        Full = "Intrusion Detection System"
+        Description = "A device or software application that monitors a network for malicious activities or policy violations."
+    }
+    "IPS" = @{
+        Full = "Intrusion Prevention System"
+        Description = "A network security tool that examines network traffic flows to detect and prevent vulnerability exploits."
+    }
+    "CSIRT" = @{
+        Full = "Computer Security Incident Response Team"
+        Description = "A group of experts that handles computer security incidents."
+    }
+    "SOAR" = @{
+        Full = "Security Orchestration, Automation and Response"
+        Description = "A collection of software solutions and tools that allows organizations to streamline security operations in three key areas: threat and vulnerability management, incident response and security operations automation."
+    }
+    "EDR" = @{
+        Full = "Endpoint Detection and Response"
+        Description = "An integrated endpoint security solution that combines real-time continuous monitoring and collection of endpoint data with rules-based automated response and analysis capabilities."
+    }
+    "XDR" = @{
+        Full = "Extended Detection and Response"
+        Description = "A security threat detection and incident response tool that natively integrates multiple security products into a cohesive security operations system."
+    }
+    "CASB" = @{
+        Full = "Cloud Access Security Broker"
+        Description = "A security policy enforcement point placed between cloud service consumers and cloud service providers to combine and interject enterprise security policies as cloud-based resources are accessed."
+    }
+    "DMARC" = @{
+        Full = "Domain-based Message Authentication, Reporting & Conformance"
+        Description = "An email authentication, policy, and reporting protocol designed to detect and prevent email spoofing."
+    }
+    "OWASP" = @{
+        Full = "Open Web Application Security Project"
+        Description = "A nonprofit foundation that works to improve the security of software through community-led open source software projects, hundreds of local chapters worldwide, tens of thousands of members, and leading educational and training conferences."
+    }
+    "MITM" = @{
+        Full = "Man-in-the-Middle"
+        Description = "A type of cyberattack where the attacker secretly relays and possibly alters the communications between two parties who believe they are directly communicating with each other."
+    }
+    "CVE" = @{
+        Full = "Common Vulnerabilities and Exposures"
+        Description = "A list of publicly disclosed computer security flaws, providing a standardized identifier for known vulnerabilities."
+    }
+    "CVSS" = @{
+        Full = "Common Vulnerability Scoring System"
+        Description = "A free and open industry standard for assessing the severity of computer system security vulnerabilities."
+    }
+    "WAF" = @{
+        Full = "Web Application Firewall"
+        Description = "A specific form of application firewall that filters, monitors, and blocks HTTP traffic to and from a web application."
+    }
+    "SOC" = @{
+        Full = "Security Operations Center"
+        Description = "A centralized unit that deals with security issues on an organizational and technical level."
+    }
+    "ZTA" = @{
+        Full = "Zero Trust Architecture"
+        Description = "A security model that requires strict identity verification for every person and device trying to access resources on a private network, regardless of whether they are sitting within or outside of the network perimeter."
+    }
+    "IAM" = @{
+        Full = "Identity and Access Management"
+        Description = "A framework of policies and technologies to ensure that the right users have the appropriate access to technology resources."
+    }
+    "NIST" = @{
+        Full = "National Institute of Standards and Technology"
+        Description = "A U.S. government agency that develops information security standards and guidelines, including minimum requirements for federal information systems."
+    }
+    "GDPR" = @{
+        Full = "General Data Protection Regulation"
+        Description = "A regulation in EU law on data protection and privacy in the European Union and the European Economic Area."
+    }
+    "HIPAA" = @{
+        Full = "Health Insurance Portability and Accountability Act"
+        Description = "U.S. legislation that provides data privacy and security provisions for safeguarding medical information."
+    }
+    "PCI DSS" = @{
+        Full = "Payment Card Industry Data Security Standard"
+        Description = "An information security standard for organizations that handle branded credit cards from the major card schemes."
+    }
+    "OSINT" = @{
+        Full = "Open Source Intelligence"
+        Description = "Data collected from publicly available sources to be used in an intelligence context."
+    }
+    "CISO" = @{
+        Full = "Chief Information Security Officer"
+        Description = "A senior-level executive responsible for establishing and maintaining the enterprise vision, strategy, and program to ensure information assets and technologies are adequately protected."
+    }
+}
+
+$NHS = @{
+    "A&E" = @{
+        Full = "Accident and Emergency"
+        Description = "The department in a hospital that deals with urgent and emergency cases."
+    }
+    "AHP" = @{
+        Full = "Allied Health Professional"
+        Description = "Healthcare professionals distinct from nursing, medicine, and pharmacy, such as physiotherapists, occupational therapists, etc."
+    }
+    "CAMHS" = @{
+        Full = "Child and Adolescent Mental Health Services"
+        Description = "Specialized NHS services that support young people with their mental health."
+    }
+    "CCG" = @{
+        Full = "Clinical Commissioning Group"
+        Description = "Groups of general practices that work together to plan and design local health services in England."
+    }
+    "CQC" = @{
+        Full = "Care Quality Commission"
+        Description = "The independent regulator of health and social care in England."
+    }
+    "DHSC" = @{
+        Full = "Department of Health and Social Care"
+        Description = "The UK government department responsible for government policy on health and adult social care matters in England."
+    }
+    "DNA" = @{
+        Full = "Did Not Attend"
+        Description = "Used when a patient misses an appointment without prior notice."
+    }
+    "ENT" = @{
+        Full = "Ear, Nose, and Throat"
+        Description = "The medical specialty dealing with conditions of the ear, nose, and throat."
+    }
+    "GMC" = @{
+        Full = "General Medical Council"
+        Description = "The public body that maintains the official register of medical practitioners in the UK."
+    }
+    "GP" = @{
+        Full = "General Practitioner"
+        Description = "A medical doctor who treats acute and chronic illnesses and provides preventive care and health education to patients."
+    }
+    "HCA" = @{
+        Full = "Healthcare Assistant"
+        Description = "A non-registered nursing staff member who assists in providing patient care under the guidance of qualified healthcare professionals."
+    }
+    "ICS" = @{
+        Full = "Integrated Care System"
+        Description = "Partnerships between organizations that meet health and care needs across an area, coordinating services and planning to improve population health."
+    }
+    "MDT" = @{
+        Full = "Multidisciplinary Team"
+        Description = "A group of healthcare professionals from different disciplines who work together to provide comprehensive patient care."
+    }
+    "NICE" = @{
+        Full = "National Institute for Health and Care Excellence"
+        Description = "An executive non-departmental public body that provides national guidance and advice to improve health and social care in England."
+    }
+    "OOH" = @{
+        Full = "Out of Hours"
+        Description = "Medical care provided outside normal GP practice hours, typically evenings, weekends, and public holidays."
+    }
+    "PAS" = @{
+        Full = "Patient Administration System"
+        Description = "A software system used in healthcare to record and manage patient data."
+    }
+    "PHE" = @{
+        Full = "Public Health England"
+        Description = "An executive agency sponsored by the Department of Health and Social Care, responsible for protecting and improving the nation's health and wellbeing."
+    }
+    "QOF" = @{
+        Full = "Quality and Outcomes Framework"
+        Description = "A voluntary annual reward and incentive program for GP practices in England, detailing practice achievement results."
+    }
+    "STP" = @{
+        Full = "Sustainability and Transformation Partnership"
+        Description = "Areas covering all of England where local NHS organizations and councils drew up shared proposals to improve health and care."
+    }
+    "UKHSA" = @{
+        Full = "UK Health Security Agency"
+        Description = "An executive agency responsible for planning, preventing and responding to external health threats, replacing Public Health England in 2021."
+    }
+    "WTE" = @{
+        Full = "Whole Time Equivalent"
+        Description = "A way to measure employed persons in a way that makes them comparable even if they work different numbers of hours per week."
+    }
+    "NHS" = @{
+        Full = "National Health Service"
+        Description = "The publicly funded healthcare system in the United Kingdom."
+    }
+    "NHSE" = @{
+        Full = "NHS England"
+        Description = "The body responsible for overseeing the day-to-day operation of the NHS in England."
+    }
+    "NHSI" = @{
+        Full = "NHS Improvement"
+        Description = "The organization responsible for overseeing NHS trusts and independent providers of NHS-funded care."
+    }
+    "FTE" = @{
+        Full = "Full-Time Equivalent"
+        Description = "A unit that indicates the workload of an employed person in a way that makes workloads comparable across various contexts."
+    }
+    "PCN" = @{
+        Full = "Primary Care Network"
+        Description = "Groups of GP practices working together with community, mental health, social care, pharmacy, hospital and voluntary services in their local areas."
+    }
+    "RCN" = @{
+        Full = "Royal College of Nursing"
+        Description = "The UK's largest nursing union and professional body."
+    }
+    "BMA" = @{
+        Full = "British Medical Association"
+        Description = "The professional association and registered trade union for doctors in the United Kingdom."
+    }
+}
 
 
 $medical = @{
@@ -815,6 +1798,26 @@ $UHD = @{
         Full = "Yeomans Way"; 
         Description = "TBC"; 
         Location = "TBC" 
+    }
+    "RBH" = @{ 
+    Full = "Royal Bournemouth Hospital"; 
+    Description = "TBC"; 
+    Location = "TBC" 
+    }
+    "PHT" = @{ 
+    Full = "Poole Hospital"; 
+    Description = "TBC"; 
+    Location = "TBC" 
+    }
+    "PGH" = @{ 
+    Full = "Poole General Hospital"; 
+    Description = "TBC"; 
+    Location = "TBC" 
+    }
+    "XCH" = @{ 
+    Full = "Christchurth"; 
+    Description = "TBC"; 
+    Location = "TBC" 
     }
 }
 
@@ -1194,8 +2197,14 @@ function Get-GlossaryTerm {
     $categories = @{
         "Technical" = $technical
         "Business" = $business
+        "UK" = $UK
+        "Azure" = $Azure
+        "Apple" = $Apple
+        "Office" = $office
         "Medical" = $medical
         "Hospital" = $hospital
+        "Cybersecurity" = $Cybersecurity
+        "NHS" = $NHS
         "UHD" = $UHD
         "PHT" = $PHT
         "RBH" = $RBH
@@ -1232,9 +2241,14 @@ function Get-GlossaryTerm {
 
 # ASCII Art of a Hospital
 $hospitalArt = @"
+
+WHAT DOES __________ STAND FOR?
+
+WHERE IS ____________ WARD EXACTLY?
+
        ______________________________
       /                              \
-     /     HOSPITAL SEARCH TOOL (_)   \
+     /  HOSPITAL & IT SEARCH TOOL (_) \
     /                _          /      \
    /  ___   ___    _| |_    ___   ___   \
   /  |   | |   |  |_   _|  |   | |   |   \ 
@@ -1257,6 +2271,7 @@ Clear-Host
 Write-Host $hospitalArt
 Write-Host "`nHospital Acronym Glossary Lookup"
 Write-Host "Version 1.0"
+Write-Host "Last updated 10/08/2024"
 Write-Host "Created by David Jenner`n"
 
 # Main script
@@ -1264,8 +2279,29 @@ do {
     $inputAcronym = Read-Host "Enter the acronym you want to look up"
     Get-GlossaryTerm -Acronym $inputAcronym
 
-    $continue = Read-Host "`nDo you want to search for another acronym? (Y/N)"
-} while ($continue.ToUpper() -eq 'Y')
+    $response = 
+    Write-Host ""
+    Write-Host ""
+    Read-Host "Did you find what you were looking for? (yes/no)"
+    if ($response -eq "n") {
+        $newFull = Read-Host "Enter the full form of the acronym"
+        $newDescription = Read-Host "Enter the description of the acronym"
+        $newCategory = Read-Host "Enter the category (Medical, Technical, Business, UK, Office)"
+        Add-NewAcronym -Acronym $inputAcronym -Full $newFull -Description $newDescription -Category $newCategory
+    }
 
-Write-Host "`nThank you for using the Hospital Acronym Glossary Lookup. Goodbye!"
+    $anotherSearch = Read-Host "Do you want to search for another acronym? (yes/no)"
+} while ($anotherSearch -eq "y")
 
+Write-Host "`nThank you for using the Acronym Glossary Lookup. Goodbye!"
+
+$thankYouArt = @"
+  _______ _                 _     __     __         
+ |__   __| |               | |    \ \   / /         
+    | |  | |__   __ _ _ __ | | __  \ \_/ /__  _   _ 
+    | |  | '_ \ / _` | '_ \| |/ /   \   / _ \| | | |
+    | |  | | | | (_| | | | |   <     | | (_) | |_| |
+    |_|  |_| |_|\__,_|_| |_|_|\_\    |_|\___/ \__,_|
+"@
+
+Write-Host $thankYouArt
