@@ -9,7 +9,7 @@ $acronymMapping = @{
 }
 
 # Technical Acronyms
-$technicalGlossary = @{
+$technical = @{
     "API" = @{
         Full = "Application Programming Interface"
         Description = "A set of protocols and tools for building software applications, defining how components should interact."
@@ -433,7 +433,7 @@ $technicalGlossary = @{
 }
 
 
-$medicalGlossary = @{
+$medical = @{
     "APTT" = @{
         Full = "Activated Partial Thromboplastin Time"
         Description = "A blood test that measures the time it takes for blood to clot. It helps assess bleeding disorders and monitor anticoagulant therapy."
@@ -645,7 +645,7 @@ $medicalGlossary = @{
 }
 
 # Hospital Ward Acronyms
-$hospitalWardGlossary = @{
+$hospital = @{
  "ICU"       = @{
         Full = "Intensive Care Unit"
         Description = "A specialized unit providing care for critically ill patients requiring constant monitoring and advanced medical support."
@@ -725,6 +725,19 @@ $hospitalWardGlossary = @{
     "ENDO"      = @{
         Full = "Endocrinology Ward"
         Description = "A unit specializing in treating disorders of the endocrine system."
+    }
+}
+
+$UHD = @{
+    "PVH" = @{ 
+        Full = "Park View House"; 
+        Description = "TBC"; 
+        Location = "TBC" 
+    }
+    "YMW" = @{ 
+        Full = "Yeomans Way"; 
+        Description = "TBC"; 
+        Location = "TBC" 
     }
 }
 
@@ -901,7 +914,7 @@ $PHT = @{
         Location = "Investigations Zone, Floor 1"
     }
 }
-    
+
 
 $RBH = @{
     "AMU" = @{ 
@@ -1093,7 +1106,6 @@ $RBH = @{
     }
 }
 
-
 # Function to look up an acronym across all categories
 function Get-GlossaryTerm {
     param (
@@ -1101,26 +1113,81 @@ function Get-GlossaryTerm {
     )
     
     $Acronym = $Acronym.ToUpper()
-    
-    if ($medicalGlossary.ContainsKey($Acronym)) {
-        Write-Host "$Acronym stands for '$($medicalGlossary[$Acronym])' (Medical)"
-    } elseif ($technicalGlossary.ContainsKey($Acronym)) {
-        Write-Host "$Acronym stands for '$($technicalGlossary[$Acronym])' (Technical)"
-    } elseif ($PHT.ContainsKey($Acronym)) {
-        $wardInfo = $PHT[$Acronym]
-        Write-Host "$Acronym stands for '$($wardInfo.Full)' (Hospital Ward)"
-        Write-Host "Description: $($wardInfo.Description)"
-        Write-Host "Location: $($wardInfo.Location)"
-    } elseif ($RBH.ContainsKey($Acronym)) {
-        $wardInfo = $RBH[$Acronym]
-        Write-Host "$Acronym stands for '$($wardInfo.Full)' (Hospital Ward)"
-        Write-Host "Description: $($wardInfo.Description)"
-        Write-Host "Location: $($wardInfo.Location)"
-    } else {
-        Write-Host "Acronym '$Acronym' not found in the glossary."
+    $found = $false
+    $categories = @{
+        "Technical" = $technical
+        "Medical" = $medical
+        "Hospital" = $hospital
+        "UHD" = $UHD
+        "PHT" = $PHT
+        "RBH" = $RBH
+    }
+    foreach ($category in $categories.Keys) {
+        if ($categories[$category].ContainsKey($Acronym)) {
+            $found = $true
+            $info = $categories[$category][$Acronym]
+            
+            Write-Host "`n$category Category:"
+            Write-Host "$Acronym stands for '$($info.Full)'"
+            
+            if ($info.ContainsKey("Description")) {
+                Write-Host "Description: $($info.Description)"
+            }
+            
+            if ($info.ContainsKey("Location")) {
+                Write-Host "Location: $($info.Location)"
+            }
+            
+            if ($info.ContainsKey("VisitingTimes")) {
+                Write-Host "Visiting Times: $($info.VisitingTimes)"
+            }
+            
+            if ($info.ContainsKey("MealTimes")) {
+                Write-Host "Meal Times: $($info.MealTimes)"
+            }
+        }
+    }
+    if (-not $found) {
+        Write-Host "Acronym '$Acronym' not found in any category of the glossary."
     }
 }
 
+# ASCII Art of a Hospital
+$hospitalArt = @"
+       ______________________________
+      /                              \
+     /     HOSPITAL SEARCH TOOL (_)   \
+    /                _          /      \
+   /  ___   ___    _| |_    ___   ___   \
+  /  |   | |   |  |_   _|  |   | |   |   \ 
+ /   |___| |___|    |_|    |___| |___|    \
+/__________________________________________\
+|  ___ ___  ___ ___  ||  ___ ___  ___ ___  |
+| |   |   ||   |   | || |   |   ||   |   | |
+| |   |   ||   |   | || |   |   ||   |   | |
+| |___|___||___|___| || |___|___||___|___| |
+|____________________||____________________|
+|  ___ ___  ___ ___  ||  ___ ___  ___ ___  |
+| |   |   ||   |   | || |   |   ||   |   | |
+| |   |   ||   |   | || |   |   ||   |   | |
+| |___|___||___|___| || |___|___||___|___| |
+|____________________||____________________|
+"@
+
+# Display ASCII art, credits, and version
+Clear-Host
+Write-Host $hospitalArt
+Write-Host "`nHospital Acronym Glossary Lookup"
+Write-Host "Version 1.0"
+Write-Host "Created by David Jenner`n"
+
 # Main script
-$inputAcronym = Read-Host "Enter the acronym you want to look up"
-Get-GlossaryTerm -Acronym $inputAcronym
+do {
+    $inputAcronym = Read-Host "Enter the acronym you want to look up"
+    Get-GlossaryTerm -Acronym $inputAcronym
+
+    $continue = Read-Host "`nDo you want to search for another acronym? (Y/N)"
+} while ($continue.ToUpper() -eq 'Y')
+
+Write-Host "`nThank you for using the Hospital Acronym Glossary Lookup. Goodbye!"
+
